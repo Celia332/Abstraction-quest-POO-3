@@ -12,26 +12,26 @@ require_once 'Skate.php';
 
 $car = new Car();
 $bike = new Bike();
-$Skate = new Skate();
+$skate = new Skate();
 
 
 $motorWay = new MotorWay();
-$motorWay->addVehicle(new Car());
-$motorWay->addVehicle(new Bike());
-$motorWay->addVehicle(new Skate());
+$motorWay->addVehicle($car);
+$motorWay->addVehicle($bike);
+$motorWay->addVehicle($skate);
 var_dump($motorWay);
 
 
-pedestrianWay = new PedestrianWay();
-$pedestrianWay->addVehicle(new Car());
-$pedestrianWay->addVehicle(new Bike());
-$pedestrianWay->addVehicle(new Skate());
+$pedestrianWay = new PedestrianWay();
+$pedestrianWay->addVehicle($car);
+$pedestrianWay->addVehicle($bike);
+$pedestrianWay->addVehicle($skate);
 var_dump($pedestrianWay);
 
 $residentialWay =  new ResidentialWay();
-$residentialWay->addVehicle(new Car());
-$residentialWay->addVehicle(new Bike());
-$residentialWay->addVehicle(new Skate());
+$residentialWay->addVehicle($car);
+$residentialWay->addVehicle($bike);
+$residentialWay->addVehicle($skate);
 var_dump($residentialWay);
 
 
