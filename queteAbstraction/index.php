@@ -16,23 +16,22 @@ $Skate = new Skate();
 
 
 $motorWay = new MotorWay();
-$motorWay->addVehicle($car);
-$motorWay->addVehicle($bike);
-$motorWay->addVehicle($skate);
+$motorWay->addVehicle(new Car());
+$motorWay->addVehicle(new Bike());
+$motorWay->addVehicle(new Skate());
 var_dump($motorWay);
 
 
-$pedestrianWay = new PedestrianWay();
-$pedestrianWay->addVehicle($car);
-$pedestrianWay->addVehicle($bike);
-$pedestrianWay->addVehicle($bike);
+pedestrianWay = new PedestrianWay();
+$pedestrianWay->addVehicle(new Car());
+$pedestrianWay->addVehicle(new Bike());
+$pedestrianWay->addVehicle(new Skate());
 var_dump($pedestrianWay);
 
-
 $residentialWay =  new ResidentialWay();
-$residentialWay->addVehicle($car);
-$residentialWay->addVehicle($bike);
-$residentialWay->addVehicle($skate);
+$residentialWay->addVehicle(new Car());
+$residentialWay->addVehicle(new Bike());
+$residentialWay->addVehicle(new Skate());
 var_dump($residentialWay);
 
 
